@@ -19,7 +19,7 @@ OUTPUT_FOLDER = "output"              # Where to save the final video
 MIN_INTRO_DURATION = 2              # Minimum duration for intro clip in seconds (goon clip)
 LOOP = False                          # Set to True to loop the script
 TIKTOK_UPLOAD = True                # Set to True to auto upload to TikTok
-DESCTIPION = ["dxdcrew.onrender.com", "DXDCREW ON TOP"]  # Description for TikTok upload
+DESCRIPTION = ["dxdcrew.onrender.com", "DXDCREW ON TOP"]  # Description for TikTok upload
 # ===================================
 
 # Prompt to get cookies
@@ -362,7 +362,7 @@ def main():
             # Upload a single video
             uploader.upload_video(
                 video_path=output_file,
-                description=DESCTIPION[random.randint(0, len(DESCTIPION)-1)],
+                description=DESCRIPTION[random.randint(0, len(DESCRIPTION)-1)],
                 hashtags=["viral", "fyp", "trending"]
             )
         
